@@ -102,7 +102,7 @@
     % PDF-only packages (will not be used in the HTML output)
     \usepackage[a4paper, left=25mm, right=25mm, top=30mm, bottom=30mm]{geometry}
     \usepackage[document]{ragged2e} % Ragged right text for increased accessibility
-    % \makeatletter\AddToHook{cmd/mdf@lrbox/after}{\RaggedRight}\makeatother
+    \makeatletter\AddToHook{cmd/mdf@lrbox/after}{\RaggedRight\sloppy}\makeatother
     \usepackage{parskip} % Removes paragraph indenting and adds skip
     \ifdefined \choosefonts
     \else
